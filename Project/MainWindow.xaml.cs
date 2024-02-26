@@ -20,5 +20,49 @@ namespace Project
         {
             InitializeComponent();
         }
+
+        private void Button_Reg_Click(object sender, RoutedEventArgs e)
+        {
+            string login=textBoxLogin.Text.Trim();
+            string pass = passBox.Password.Trim();
+            string pass2 = passBox2.Password.Trim();
+            string email = textBoxEmail.Text.Trim().ToLower();
+
+            if(login.Length< 5)
+            {
+                textBoxLogin.ToolTip = "This field was entered incorrectly";
+                textBoxLogin.Background = Brushes.DarkRed;
+            }
+            else if (pass.Length< 5)
+            {
+                passBox.ToolTip = "This field was entered incorrectly";
+                passBox.Background = Brushes.DarkRed;
+            }
+            else if (pass!=pass2)
+            {
+                passBox2.ToolTip = "This field was entered incorrectly";
+                passBox2.Background = Brushes.DarkRed;
+            }
+            else if (email.Length< 5||!email.Contains("@")||!email.Contains("."))
+            {
+                passBox.ToolTip = "This field was entered incorrectly";
+                passBox.Background = Brushes.DarkRed;
+            }
+
+            else
+            {
+                textBoxLogin.ToolTip = "";
+                textBoxLogin.Background = Brushes.Transparent;
+                passBox.ToolTip = "";
+                passBox.Background = Brushes.Transparent;
+                passBox2.ToolTip = "";
+                passBox2.Background= Brushes.Transparent;
+                textBoxEmail.ToolTip = "";
+                textBoxEmail.Background= Brushes.Transparent;
+
+                MessageBox.Show("Everything is Good!");
+            }
+
+        }
     }
 }
