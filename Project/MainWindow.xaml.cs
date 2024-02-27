@@ -31,22 +31,22 @@ namespace Project
             if(login.Length< 5)
             {
                 textBoxLogin.ToolTip = "This field was entered incorrectly";
-                textBoxLogin.Background = Brushes.DarkRed;
+                textBoxLogin.Background = Brushes.LightPink;
             }
             else if (pass.Length< 5)
             {
                 passBox.ToolTip = "This field was entered incorrectly";
-                passBox.Background = Brushes.DarkRed;
+                passBox.Background = Brushes.LightPink;
             }
             else if (pass!=pass2)
             {
                 passBox2.ToolTip = "This field was entered incorrectly";
-                passBox2.Background = Brushes.DarkRed;
+                passBox2.Background = Brushes.LightPink;
             }
             else if (email.Length< 5||!email.Contains("@")||!email.Contains("."))
             {
                 passBox.ToolTip = "This field was entered incorrectly";
-                passBox.Background = Brushes.DarkRed;
+                passBox.Background = Brushes.LightPink;
             }
 
             else
