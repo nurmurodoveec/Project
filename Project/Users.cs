@@ -11,7 +11,23 @@ namespace Project
     {
         [Key]
         public int Id { get; set; }
-        public string Login, Password, Email;
+        private string Login, Password, Email;
+
+        public string login
+        {
+            get { return Login; }
+            set { Login = value; }
+        }
+        public string password
+        {
+            get { return Password; }
+            set { Password = value; }
+        }
+        public string email
+        {
+            get { return Email; }
+            set { Email = value; }
+        }
         public Users() { }
 
         public Users (string login, string password, string email)
