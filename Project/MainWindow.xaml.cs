@@ -33,6 +33,7 @@ namespace Project
 
             if(login.Length< 5)
             {
+
                 textBoxLogin.ToolTip = "This field was entered incorrectly";
                 textBoxLogin.Background = Brushes.LightPink;
             }

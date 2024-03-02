@@ -26,24 +26,24 @@ namespace Project
         }
         private void Button_Auth_Click (object sender, RoutedEventArgs e)
         {
-            string login = textBoxLogin.Text.Trim();
-            string pass = passBox.Password.Trim();
+            string login = textBoxLogin1.Text.Trim();
+            string pass = passBox1.Password.Trim();
             if (login.Length < 5)
             {
-                textBoxLogin.ToolTip = "This field was entered incorrectly";
-                textBoxLogin.Background = Brushes.LightPink;
+                textBoxLogin1.ToolTip = "This field was entered incorrectly";
+                textBoxLogin1.Background = Brushes.LightPink;
             }
             else if (pass.Length < 5)
             {
-                passBox.ToolTip = "This field was entered incorrectly";
-                passBox.Background = Brushes.LightPink;
+                passBox1.ToolTip = "This field was entered incorrectly";
+                passBox1.Background = Brushes.LightPink;
             }
             else
             {
-                textBoxLogin.ToolTip = "";
-                textBoxLogin.Background = Brushes.Transparent;
-                passBox.ToolTip = "";
-                passBox.Background = Brushes.Transparent;
+                textBoxLogin1.ToolTip = "";
+                textBoxLogin1.Background = Brushes.Transparent;
+                passBox1.ToolTip = "";
+                passBox1.Background = Brushes.Transparent;
                 Users authUser = null;
                 using(ApplicationContext context= new ApplicationContext())
                 {
