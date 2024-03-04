@@ -7,8 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
-
+using System.Windows.Forms
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -40,6 +39,7 @@ namespace Project
                 passBox1.Background = Brushes.LightPink;
             }
             else
+
             {
                 textBoxLogin1.ToolTip = "";
                 textBoxLogin1.Background = Brushes.Transparent;
