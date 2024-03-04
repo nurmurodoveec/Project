@@ -39,7 +39,6 @@ namespace Project
                 passBox1.Background = Brushes.LightPink;
             }
             else
-
             {
                 textBoxLogin1.ToolTip = "";
                 textBoxLogin1.Background = Brushes.Transparent;
